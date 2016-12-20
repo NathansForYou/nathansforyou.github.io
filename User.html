@@ -115,43 +115,12 @@ Charities.</p>
 <div class="tags">
   
 
-</div><div id="subclasses">
-  <h2>Direct Known Subclasses</h2>
-  <p class="children"><span class='object_link'><a href="Artist.html" title="Artist (class)">Artist</a></span>, <span class='object_link'><a href="Charity.html" title="Charity (class)">Charity</a></span></p>
 </div>
-
 
 
 
   <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
   <ul class="summary">
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#causeList-instance_method" title="#causeList (instance method)">#<strong>causeList</strong>  &#x21d2; List </a>
-    
-
-    
-  </span>
-  
-  
-  
-    
-    
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>the list of cause ID&#39;s this user is following.</p>
-</div></span>
-  
-</li>
-
     
       <li class="public ">
   <span class="summary_signature">
@@ -174,7 +143,7 @@ Charities.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>the user&#39;s description paragraph.</p>
+<p>the user&#39;s description paragraph (only set for charities).</p>
 </div></span>
   
 </li>
@@ -210,60 +179,6 @@ Charities.</p>
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#followerList-instance_method" title="#followerList (instance method)">#<strong>followerList</strong>  &#x21d2; List </a>
-    
-
-    
-  </span>
-  
-  
-  
-    
-    
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>the list of user ID&#39;s following this user.</p>
-</div></span>
-  
-</li>
-
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#followingList-instance_method" title="#followingList (instance method)">#<strong>followingList</strong>  &#x21d2; List </a>
-    
-
-    
-  </span>
-  
-  
-  
-    
-    
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>the list of user ID&#39;s this user is following.</p>
-</div></span>
-  
-</li>
-
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
       <a href="#id-instance_method" title="#id (instance method)">#<strong>id</strong>  &#x21d2; int </a>
     
 
@@ -291,88 +206,7 @@ Charities.</p>
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#photo-instance_method" title="#photo (instance method)">#<strong>photo</strong>  &#x21d2; File </a>
-    
-
-    
-  </span>
-  
-  
-  
-    
-    
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>the user&#39;s account photo.</p>
-</div></span>
-  
-</li>
-
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#playlistList-instance_method" title="#playlistList (instance method)">#<strong>playlistList</strong>  &#x21d2; List </a>
-    
-
-    
-  </span>
-  
-  
-  
-    
-    
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>the list of playlist IDs this user has created.</p>
-</div></span>
-  
-</li>
-
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#recentlyPlayed-instance_method" title="#recentlyPlayed (instance method)">#<strong>recentlyPlayed</strong>  &#x21d2; List </a>
-    
-
-    
-  </span>
-  
-  
-  
-    
-    
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>a queue of the 10 songs most recently played by this user.</p>
-</div></span>
-  
-</li>
-
-    
-      <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#userName-instance_method" title="#userName (instance method)">#<strong>userName</strong>  &#x21d2; String </a>
+      <a href="#title-instance_method" title="#title (instance method)">#<strong>title</strong>  &#x21d2; String </a>
     
 
     
@@ -403,6 +237,39 @@ Charities.</p>
 
   
     <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search-class_method" title="search (class method)">.<strong>search</strong>(query)  &#x21d2; List </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Searches for users with a name similar to the entered query.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
       Instance Method Summary
       <small><a href="#" class="summary_toggle">collapse</a></small>
     </h2>
@@ -412,7 +279,7 @@ Charities.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#addToPlaylist-instance_method" title="#addToPlaylist (instance method)">#<strong>addToPlaylist</strong>(songId, playlistId)  &#x21d2; Object </a>
+      <a href="#feed-instance_method" title="#feed (instance method)">#<strong>feed</strong>  &#x21d2; List </a>
     
 
     
@@ -427,7 +294,8 @@ Charities.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Adds a song the one of the user&#39;s playlists.</p>
+<p>Returns the user&#39;s status feed, all songs uploaded by other users they
+follow.</p>
 </div></span>
   
 </li>
@@ -436,7 +304,7 @@ Charities.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#createPlaylist-instance_method" title="#createPlaylist (instance method)">#<strong>createPlaylist</strong>  &#x21d2; Object </a>
+      <a href="#follow-instance_method" title="#follow (instance method)">#<strong>follow</strong>(other_user)  &#x21d2; Object </a>
     
 
     
@@ -451,7 +319,8 @@ Charities.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Creates a new playlist for the user.</p>
+<p>Sets the current user to follow another user, receiving their song uploads
+on their feed.</p>
 </div></span>
   
 </li>
@@ -460,7 +329,7 @@ Charities.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#deletePlaylist-instance_method" title="#deletePlaylist (instance method)">#<strong>deletePlaylist</strong>(playlistId)  &#x21d2; Object </a>
+      <a href="#following%3F-instance_method" title="#following? (instance method)">#<strong>following?</strong>(other_user)  &#x21d2; boolean </a>
     
 
     
@@ -475,7 +344,7 @@ Charities.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Deletes a user playlist with the entered id.</p>
+<p>Returns true if the current user is following the other user.</p>
 </div></span>
   
 </li>
@@ -484,7 +353,7 @@ Charities.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#follow-instance_method" title="#follow (instance method)">#<strong>follow</strong>(id)  &#x21d2; Object </a>
+      <a href="#unfollow-instance_method" title="#unfollow (instance method)">#<strong>unfollow</strong>(other_user)  &#x21d2; Object </a>
     
 
     
@@ -499,7 +368,33 @@ Charities.</p>
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Adds a user with the entered id to the user&#39;s followingList.</p>
+<p>Unfollows a given user, removing them from the sidebar and no longer
+receiving their feed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user_thumbnail-instance_method" title="#user_thumbnail (instance method)">#<strong>user_thumbnail</strong>(user)  &#x21d2; File </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Retrieves the thumbnail of the user, with a default if the user doesn&#39;t
+have a thumbnail file.</p>
 </div></span>
   
 </li>
@@ -514,70 +409,9 @@ Charities.</p>
     <h2>Instance Attribute Details</h2>
     
       
-      <span id="causeList=-instance_method"></span>
-      <div class="method_details first">
-  <h3 class="signature first" id="causeList-instance_method">
-  
-    #<strong>causeList</strong>  &#x21d2; <tt>List</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>the list of cause ID&#39;s this user is following</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>List</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>the current value of causeList</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-13
-14
-15</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 13</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_causeList'>causeList</span>
-  <span class='ivar'>@causeList</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      
       <span id="decription=-instance_method"></span>
-      <div class="method_details ">
-  <h3 class="signature " id="decription-instance_method">
+      <div class="method_details first">
+  <h3 class="signature first" id="decription-instance_method">
   
     #<strong>decription</strong>  &#x21d2; <tt>String</tt> 
   
@@ -588,7 +422,7 @@ Charities.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>the user&#39;s description paragraph</p>
+<p>the user&#39;s description paragraph (only set for charities)</p>
 
 
   </div>
@@ -620,12 +454,12 @@ Charities.</p>
       <pre class="lines">
 
 
-13
-14
-15</pre>
+8
+9
+10</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'models/user.rb', line 8</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_decription'>decription</span>
   <span class='ivar'>@decription</span>
@@ -681,137 +515,15 @@ Charities.</p>
       <pre class="lines">
 
 
-13
-14
-15</pre>
+8
+9
+10</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'models/user.rb', line 8</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_email'>email</span>
   <span class='ivar'>@email</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      
-      <span id="followerList=-instance_method"></span>
-      <div class="method_details ">
-  <h3 class="signature " id="followerList-instance_method">
-  
-    #<strong>followerList</strong>  &#x21d2; <tt>List</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>the list of user ID&#39;s following this user</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>List</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>the current value of followerList</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-13
-14
-15</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 13</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_followerList'>followerList</span>
-  <span class='ivar'>@followerList</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      
-      <span id="followingList=-instance_method"></span>
-      <div class="method_details ">
-  <h3 class="signature " id="followingList-instance_method">
-  
-    #<strong>followingList</strong>  &#x21d2; <tt>List</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>the list of user ID&#39;s this user is following</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>List</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>the current value of followingList</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-13
-14
-15</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 13</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_followingList'>followingList</span>
-  <span class='ivar'>@followingList</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -864,12 +576,12 @@ Charities.</p>
       <pre class="lines">
 
 
-13
-14
-15</pre>
+8
+9
+10</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'models/user.rb', line 8</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_id'>id</span>
   <span class='ivar'>@id</span>
@@ -880,194 +592,11 @@ Charities.</p>
 </div>
     
       
-      <span id="photo=-instance_method"></span>
+      <span id="title=-instance_method"></span>
       <div class="method_details ">
-  <h3 class="signature " id="photo-instance_method">
+  <h3 class="signature " id="title-instance_method">
   
-    #<strong>photo</strong>  &#x21d2; <tt>File</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>the user&#39;s account photo</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>File</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>the current value of photo</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-13
-14
-15</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 13</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_photo'>photo</span>
-  <span class='ivar'>@photo</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      
-      <span id="playlistList=-instance_method"></span>
-      <div class="method_details ">
-  <h3 class="signature " id="playlistList-instance_method">
-  
-    #<strong>playlistList</strong>  &#x21d2; <tt>List</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>the list of playlist IDs this user has created</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>List</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>the current value of playlistList</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-13
-14
-15</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 13</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_playlistList'>playlistList</span>
-  <span class='ivar'>@playlistList</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      
-      <span id="recentlyPlayed=-instance_method"></span>
-      <div class="method_details ">
-  <h3 class="signature " id="recentlyPlayed-instance_method">
-  
-    #<strong>recentlyPlayed</strong>  &#x21d2; <tt>List</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>a queue of the 10 songs most recently played by this user</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>List</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>the current value of recentlyPlayed</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-13
-14
-15</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 13</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_recentlyPlayed'>recentlyPlayed</span>
-  <span class='ivar'>@recentlyPlayed</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      
-      <span id="userName=-instance_method"></span>
-      <div class="method_details ">
-  <h3 class="signature " id="userName-instance_method">
-  
-    #<strong>userName</strong>  &#x21d2; <tt>String</tt> 
+    #<strong>title</strong>  &#x21d2; <tt>String</tt> 
   
 
   
@@ -1095,7 +624,7 @@ Charities.</p>
       
         &mdash;
         <div class='inline'>
-<p>the current value of userName</p>
+<p>the current value of title</p>
 </div>
       
     </li>
@@ -1108,15 +637,15 @@ Charities.</p>
       <pre class="lines">
 
 
-13
-14
-15</pre>
+8
+9
+10</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'models/user.rb', line 8</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_userName'>userName</span>
-  <span class='ivar'>@userName</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_title'>title</span>
+  <span class='ivar'>@title</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1125,15 +654,100 @@ Charities.</p>
     
   </div>
 
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="search-class_method">
+  
+    .<strong>search</strong>(query)  &#x21d2; <tt>List</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Searches for users with a name similar to the entered query</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>query</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the entered user search</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>List</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the list of users with titles similar to the query</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+77
+78
+79</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'models/user.rb', line 77</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_search'>search</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>title like ?</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_query'>query</span><span class='embexpr_end'>}</span><span class='tstring_content'>%</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
 
   <div id="instance_method_details" class="method_details_list">
     <h2>Instance Method Details</h2>
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="addToPlaylist-instance_method">
+  <h3 class="signature first" id="feed-instance_method">
   
-    #<strong>addToPlaylist</strong>(songId, playlistId)  &#x21d2; <tt>Object</tt> 
+    #<strong>feed</strong>  &#x21d2; <tt>List</tt> 
   
 
   
@@ -1142,161 +756,49 @@ Charities.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Adds a song the one of the user&#39;s playlists.</p>
+<p>Returns the user&#39;s status feed, all songs uploaded by other users they
+follow.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
   
     <li>
       
-        <span class='name'>songId</span>
+      
+        <span class='type'>(<tt>List</tt>)</span>
       
       
-        <span class='type'>(<tt>int</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>the ID of the selected song</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
-        <span class='name'>playlistId</span>
-      
-      
-        <span class='type'>(<tt>int</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>the ID of the selected playlist</p>
-</div>
       
     </li>
   
 </ul>
 
-
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-44
-45</pre>
+67
+68
+69
+70
+71
+72</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 44</span>
+      <pre class="code"><span class="info file"># File 'models/user.rb', line 67</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_addToPlaylist'>addToPlaylist</span><span class='lparen'>(</span><span class='id identifier rubyid_songId'>songId</span><span class='comma'>,</span> <span class='id identifier rubyid_playlistId'>playlistId</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="createPlaylist-instance_method">
-  
-    #<strong>createPlaylist</strong>  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Creates a new playlist for the user.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-31
-32</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 31</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_createPlaylist'>createPlaylist</span><span class='lparen'>(</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="deletePlaylist-instance_method">
-  
-    #<strong>deletePlaylist</strong>(playlistId)  &#x21d2; <tt>Object</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Deletes a user playlist with the entered id.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>id</span>
-      
-      
-        <span class='type'>(<tt>int</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>the id of the deleted playlist</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-37
-38</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 37</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_deletePlaylist'>deletePlaylist</span><span class='lparen'>(</span><span class='id identifier rubyid_playlistId'>playlistId</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_feed'>feed</span>
+  <span class='id identifier rubyid_following_ids'>following_ids</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SELECT followed_id FROM relationships
+                   WHERE  follower_id = :user_id</span><span class='tstring_end'>&quot;</span></span>
+  <span class='const'>Song</span><span class='period'>.</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>user_id IN (</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_following_ids'>following_ids</span><span class='embexpr_end'>}</span><span class='tstring_content'>)
+                   OR user_id = :user_id</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='label'>user_id:</span> <span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1306,7 +808,7 @@ Charities.</p>
       <div class="method_details ">
   <h3 class="signature " id="follow-instance_method">
   
-    #<strong>follow</strong>(id)  &#x21d2; <tt>Object</tt> 
+    #<strong>follow</strong>(other_user)  &#x21d2; <tt>Object</tt> 
   
 
   
@@ -1315,7 +817,8 @@ Charities.</p>
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Adds a user with the entered id to the user&#39;s followingList</p>
+<p>Sets the current user to follow another user, receiving their song uploads
+on their feed.</p>
 
 
   </div>
@@ -1326,16 +829,16 @@ Charities.</p>
   
     <li>
       
-        <span class='name'>id</span>
+        <span class='name'>other_user</span>
       
       
-        <span class='type'>(<tt>int</tt>)</span>
+        <span class='type'>(<tt><span class='object_link'><a href="" title="User (class)">User</a></span></tt>)</span>
       
       
       
         &mdash;
         <div class='inline'>
-<p>the id of the newly followed</p>
+<p>the user to be followed</p>
 </div>
       
     </li>
@@ -1349,13 +852,244 @@ Charities.</p>
       <pre class="lines">
 
 
-27
-28</pre>
+48
+49
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'models/user.rb', line 27</span>
+      <pre class="code"><span class="info file"># File 'models/user.rb', line 48</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_follow'>follow</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_follow'>follow</span><span class='lparen'>(</span><span class='id identifier rubyid_other_user'>other_user</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_active_relationships'>active_relationships</span><span class='period'>.</span><span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='label'>followed_id:</span> <span class='id identifier rubyid_other_user'>other_user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="following?-instance_method">
+  
+    #<strong>following?</strong>(other_user)  &#x21d2; <tt>boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns true if the current user is following the other user.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>other_user</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="User (class)">User</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the user to check if we are following</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>whether the given user is being followed</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+61
+62
+63</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'models/user.rb', line 61</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_following?'>following?</span><span class='lparen'>(</span><span class='id identifier rubyid_other_user'>other_user</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_following'>following</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_other_user'>other_user</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="unfollow-instance_method">
+  
+    #<strong>unfollow</strong>(other_user)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Unfollows a given user, removing them from the sidebar and no longer
+receiving their feed.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>other_user</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="User (class)">User</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the user to be unfollowed</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+54
+55
+56</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'models/user.rb', line 54</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_unfollow'>unfollow</span><span class='lparen'>(</span><span class='id identifier rubyid_other_user'>other_user</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_active_relationships'>active_relationships</span><span class='period'>.</span><span class='id identifier rubyid_find_by'>find_by</span><span class='lparen'>(</span><span class='label'>followed_id:</span> <span class='id identifier rubyid_other_user'>other_user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_destroy'>destroy</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="user_thumbnail-instance_method">
+  
+    #<strong>user_thumbnail</strong>(user)  &#x21d2; <tt>File</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Retrieves the thumbnail of the user, with a default if the user doesn&#39;t
+have a thumbnail file.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>user</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="User (class)">User</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the user we&#39;re retrieving the thumbnail for</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>File</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the thumbnail of the requested user</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+84
+85
+86
+87
+88
+89
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'models/user.rb', line 84</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_user_thumbnail'>user_thumbnail</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_thumbnail'>thumbnail</span><span class='period'>.</span><span class='id identifier rubyid_present?'>present?</span>
+    <span class='id identifier rubyid_image_tag'>image_tag</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_thumbnail'>thumbnail</span><span class='comma'>,</span> <span class='label'>border:</span> <span class='int'>0</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_image_tag'>image_tag</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>assets/images/default_image.jpg</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>border:</span> <span class='int'>0</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1367,7 +1101,7 @@ Charities.</p>
 </div>
 
       <div id="footer">
-  Generated on Tue Nov  1 15:01:11 2016 by
+  Generated on Tue Dec 20 17:24:12 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.5 (ruby-2.3.1).
 </div>
